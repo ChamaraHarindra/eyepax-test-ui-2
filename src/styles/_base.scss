@@ -1,0 +1,57 @@
+body {
+  background: url(../../media/paper-texture.jpg) center center no-repeat;
+  background-size: cover;
+  font-family: $primaryFont;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $primaryColor;
+  text-decoration: none;
+  &:link,
+  &:active {
+    color: $primaryColor;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.button {
+  background-color: $primaryColor;
+  color: $white;
+  border: none;
+  border-radius: 1px;
+  padding: 12px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: darken($primaryColor, 10%);
+    color: $white;
+  }
+}
+
+footer {
+  padding: 50px 20px 40px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+  background: $primaryColor;
+  display: flex;
+  color: $white;
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
+  a {
+    color: $white !important;
+    margin: 0 10px;
+  }
+}

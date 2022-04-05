@@ -1,0 +1,14 @@
+header {
+  background: $white;
+  .header-inner {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+}
